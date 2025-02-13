@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fertilizer Recommendation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Fertilizer Recommendation System</h1>
+    </div>
+
+    <div class="container">
+        <style>
+            body {
+              background-image: url('globalagriculture.jpg');
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: cover;
+            }
+            </style>
+        <form id="predictForm">
+            <label>Temperature:</label>
+            <input type="number" id="temperature" required placeholder="Enter temperature (°C)"><br>
+
+            <label>Humidity:</label>
+            <input type="number" id="humidity" required placeholder="Enter humidity (%)"><br>
+
+            <label>Moisture:</label>
+            <input type="number" id="moisture" required placeholder="Enter moisture level"><br>
+
+            <label>Soil Type:</label>
+            <select id="soil_type" required>
+                <option value="black">Black</option>
+                <option value="clayey">Clayey</option>
+                <option value="loamy">Loamy</option>
+                <option value="red">Red</option>
+                <option value="sandy">Sandy</option>
+            </select><br>
+
+            <label>Crop Type:</label>
+            <select id="crop_type" required>
+                <option value="barley">Barley</option>
+                <option value="coffee">Coffee</option>
+                <option value="cotton">Cotton</option>
+                <option value="ground nuts">Ground Nuts</option>
+                <option value="kidneybeans">Kidney Beans</option>
+                <option value="maize">Maize</option>
+                <option value="millets">Millets</option>
+                <option value="oil seeds">Oil Seeds</option>
+                <option value="orange">Orange</option>
+                <option value="paddy">Paddy</option>
+                <option value="pomegranate">Pomegranate</option>
+                <option value="pulses">Pulses</option>
+                <option value="rice">Rice</option>
+                <option value="sugarcane">Sugarcane</option>
+                <option value="tobacco">Tobacco</option>
+                <option value="watermelon">Watermelon</option>
+                <option value="wheat">Wheat</option>
+            </select><br>
+
+            <label>Nitrogen (N):</label>
+            <input type="number" id="nitrogen" required placeholder="Enter Nitrogen content"><br>
+
+            <label>Phosphorus (P):</label>
+            <input type="number" id="phosphorus" required placeholder="Enter Phosphorus content"><br>
+
+            <label>Potassium (K):</label>
+            <input type="number" id="potassium" required placeholder="Enter Potassium content"><br>
+
+            <button type="submit">Predict</button>
+        </form>
+
+        <h3 id="result"></h3>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
